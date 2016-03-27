@@ -1,10 +1,20 @@
-var num = prompt("Ingrese numero: ");
-if (isNaN(num))
+function numeroAlAzarEntreLimites(lim1,lim2)
 {
-	throw Error("No es un numero valido");
+	var num=Math.floor(Math.random()*(lim1-lim2))+lim2;
+	return num;
 }
-else
+var limiteSuperior=prompt("Ingrese limite superior: ");
+var limiteInferior=prompt("Ingrese limite Inferior: ");
+
+if (isNaN(limiteInferior) || isNaN(limiteSuperior))
 {
-	num=num*0.5;
+	throw Error("Numero no es valido");
 }
-alert("La mitad es: "+num);
+
+var contador = 0;
+while (contador<10)
+{
+var randomico = numeroAlAzarEntreLimites(parseInt(limiteSuperior),parseInt(limiteInferior));
+document.write(randomico+" ");
+contador++;
+}

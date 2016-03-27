@@ -1,6 +1,4 @@
 console.log("Inicio programa");
-var peliculasVistas = prompt("Cuantas peliculas haz visto este mes?");
-var seriesVistas = prompt("Cuantas series has visto este mes?");
-var tiempoPantalla = parseInt(peliculasVistas) + parseInt(seriesVistas);
-alert ("Wow! Haz visto " + tiempoPantalla + " veces minimo la pantalla");
+var dado = Math.floor(Math.random()*6) + 1;
+alert("Dado dice: "+dado);
 console.log("Programa completado");

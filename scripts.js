@@ -1,9 +1,13 @@
-function numeroAlAzarHastaLimite(limite)
+function max(num1, num2)
 {
-	var num=Math.floor(Math.random()*limite)+1;
-	return num;
+	if (parseInt(num1) > parseInt(num2))
+	{
+		return num1;
+	}
+	else
+	{
+		return num2;
+	}
 }
-
-
-var numAzar = numeroAlAzarHastaLimite(100);
-alert("El numero al azar es: "+numAzar);
+var result = max(4,9);
+alert("El numero mayor es: "+result);

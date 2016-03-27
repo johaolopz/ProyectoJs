@@ -1,10 +1,9 @@
-function tiraDados()
+function numeroAlAzarHastaLimite(limite)
 {
-	var dado=Math.floor(Math.random()*6)+1;
-	alert(dado);
+	var num=Math.floor(Math.random()*limite)+1;
+	return num;
 }
 
-alert("Tiramos 3 dados: ");
-tiraDados();
-tiraDados();
-tiraDados();
+
+var numAzar = numeroAlAzarHastaLimite(100);
+alert("El numero al azar es: "+numAzar);

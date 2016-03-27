@@ -1,13 +1,10 @@
-function max(num1, num2)
+var num = prompt("Ingrese numero: ");
+if (isNaN(num))
 {
-	if (parseInt(num1) > parseInt(num2))
-	{
-		return num1;
-	}
-	else
-	{
-		return num2;
-	}
+	throw Error("No es un numero valido");
 }
-var result = max(4,9);
-alert("El numero mayor es: "+result);
+else
+{
+	num=num*0.5;
+}
+alert("La mitad es: "+num);

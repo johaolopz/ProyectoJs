@@ -1,22 +1,8 @@
-function numeroAlAzar()
-{
-	var num=Math.floor(Math.random()*100)+1;
-	return num;
-}
-
-var numero = numeroAlAzar();
-var contador = 0;
-
-while (true)
-{
-	contador = contador+1;
-	num2 = numeroAlAzar();
-	if (numero === num2)
+console.log("Inicio del programa");
+var html="";
+for (var i=1; i<=10; i++)
 	{
-		alert("El numero inicial era: "+numero);
-		alert("El numero adivinado: "+num2);
-		break;
+		html += "<div>"+i+"</div>";
 	}
-}
-
-alert("El numero intentos es: "+contador);
+	document.write(html);
+	console.log("Programa completado");

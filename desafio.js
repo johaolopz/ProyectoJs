@@ -16,11 +16,38 @@ function print(html)
 	document.write(html);
 }
 
-var playList=[];
-playList.push("its my life");
-playList.push("push your hands");
-playList.push("david guetta mixes");
-playList.push("5ta sinfonia de Bethoven");
-playList.push("move your body");
-printList(playList);
+var producto=[];
+producto.push("arroz");
+producto.push("papa");
+producto.push("aceite");
+producto.push("cebolla");
+producto.push("aliño");
+
+
+while (true)
+{
+	var prodSearch = prompt ("Ingrese el producto que desea buscar,  (q) para salir o (l) para mostrar lista: ");
+	if (prodSearch == "q")
+	{
+		break;
+	}
+	else if (prodSearch == "l")
+	{
+		printList(producto);
+	}
+	else
+	{
+		var encontrado = producto.indexOf(prodSearch);
+		if (encontrado >= 0)
+		{
+			alert ("Si tenemos el producto en stock");
+		}
+		else if (encontrado < 0)
+		{
+			alert ("producto no encontrado");
+		}
+	}
+}
+
+
 console.log("Programa completado");

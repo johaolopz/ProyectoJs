@@ -1,8 +1,26 @@
 console.log("Inicio del programa");
-var html="";
-for (var i=1; i<=10; i++)
+
+function printList (lista)
+{
+	var listHTML = '<ol>';
+	for (var i=0; i < lista.length; i ++)
 	{
-		html += "<div>"+i+"</div>";
+		listHTML += '<li>' + lista[i] + '</li>'
 	}
+	listHTML += '</ol>';
+	print(listHTML);
+}
+
+function print(html)
+{
 	document.write(html);
-	console.log("Programa completado");
+}
+
+var playList=[];
+playList.push("its my life");
+playList.push("push your hands");
+playList.push("david guetta mixes");
+playList.push("5ta sinfonia de Bethoven");
+playList.push("move your body");
+printList(playList);
+console.log("Programa completado");
